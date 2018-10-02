@@ -35,32 +35,6 @@ the **Custom CSS/HTML** section there is a button labeled **Check for Updates**.
 Discourse does not subscribe to any branch which means it defaults to the main
 one provided by GitHub (in this case `master`).
 
-### Development
-
-In development you can use the same steps as above but instead of pointing to
-GitHub you can point to your local git repo. To do so you will have to start a
-Git daemon. While *in this repo* run the following command:
-
-```console
-$ git daemon --verbose --export-all --base-path=. --reuseaddr ./.git
-```
-
-This will provide you an import URL of:
-
-| Running Locally        | Running in Vagrant    |
-|------------------------|-----------------------|
-| `git://127.0.0.1/.git` | `git://10.0.2.2/.git` |
-
-You only need this running at the time you click the **Check for Updates**
-button. When using the Git Daemon, Discourse will presume the latest is based on
-the current branch that is checked out when the daemon is started. This means
-updates can happen as long as they follow the sequential caveat described above.
-
-A good workflow in development is to make a WIP commit each time you want to
-check the changes and continue to sequentially make more as you develop. Then
-when satisfied rebase the branch back into well formed commits then push that
-for PR.
-
 ## File Structure
 
 ```text

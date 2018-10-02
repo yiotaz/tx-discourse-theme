@@ -1,0 +1,31 @@
+/* Colors */
+$divider-color:#DEE1E7;
+$brand-color:#0064AB;
+
+
+.u-brand-color {color:$brand-color;}
+
+/* Borders */
+.u-borderBottom-divider {border-bottom: 1px solid $divider-color;}
+
+/* Alignment */
+.text-center { text-align:center; }
+
+/* Spacing */
+.u-paddingTop-#{$i}x { padding-top: #{$i}px; }
+.u-paddingBottom-#{$i}x { padding-bottom: #{$i}px; }
+
+/* Typography */
+h1, h4 {
+  font-weight: 200;
+  letter-spacing: normal !important;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+h4 {
+  font-size: 1.2rem;
+  line-height: 18px;
+}

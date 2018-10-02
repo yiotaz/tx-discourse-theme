@@ -1,0 +1,19 @@
+{
+  "name": "Transifex Community",
+  "about_url": "",
+  "license_url": "",
+  "color_schemes": {
+    "TX Theme": {
+      "primary": "333333",
+      "secondary": "ffffff",
+      "tertiary": "0064AB",
+      "quaternary": "0064AB",
+      "header_background": "ffffff",
+      "header_primary": "ffffff",
+      "highlight": "ffff4d",
+      "danger": "fe5d65",
+      "success": "18c125",
+      "love": "ea4c89"
+    }
+  }
+}
